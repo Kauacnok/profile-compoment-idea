@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --color-black: #0C0B0B;
+    --color-gray: #0F0E0E;
+    --color-lightgray: #B7B7B7;
+    --color-green: #046313;
+    --color-blue: #044A7D;
+    --color-brown: #725200;
+    --font1: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--color-black);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+main#container {
+    background-color: var(--color-gray);
+    color: white;
+    width: 320px;
+    height: 455px;
+}
+
+section#profile-user {
+    text-align: center;
+}
+
+section#profile-user h1 > a {
+    color: whitesmoke;
+}
+
+section#profile-user article#circle-photo {
+    width: 100px;
+    height: 100px;
+    background-color: #242424;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -30px;
+    background-image: url(../assets/dog-s.jpg);
+    background-size: cover;
+}
+
+section#profile-user  p:nth-child(2n - 1) > a {
+    color: var(--color-lightgray);
+}
+
+section#profile-user > p:nth-child(2n) > a {
+    background-color: #242424;
+    width: 100px;
+    display: inline-block;
+    color: rgb(231, 228, 228);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+section#profile-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 90%;
+    height: 85px;
+    border-radius: 5px;
+    margin: 5px auto 10px auto;
+    display: inline-block;
+}
+
+.button > p {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+.button > strong  {
+    display: block;
+    margin-left: 20px;
+    font-size: 1.9rem;
+    color: whitesmoke;
+}
+
+.button:nth-child(1n) {
+    background-color: var(--color-green);
+}
+
+.button:nth-child(2n) {
+    background-color: var(--color-blue);
+}
+
+.button:nth-child(3n) {
+    background-color: var(--color-brown);
+}
+
+@media (min-width: 700px) {
+    main#container {
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    section#profile-user {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    article#name-user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    article#name-user > h1, p {
+        display: inline-block;
+        margin-left: 8px;
+    }
+
+    section#profile-user article#circle-photo {
+        margin: 10px;
+    }
+
+    section#profile-stats {
+        flex-direction: row;
+        height: 325px;
+    }
+
+    .button {
+        width: 220px;
+        height: 100px;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,1 @@
+Desafio de recriar o layout de perfil de forma responsiva e mais semelhante possivel
