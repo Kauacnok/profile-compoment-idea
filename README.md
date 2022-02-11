@@ -4,7 +4,7 @@
 
 <a href="https://github.com/Lorenalgm/codar" target="_blank">Criadora do Desafio</a>
 
-![Mobile](hhttps://i.imgur.com/tRjr2gH.png)
+![Mobile](https://i.imgur.com/tRjr2gH.png)
 
 ![Desktop](https://i.imgur.com/8ns5XMQ.png)
 
